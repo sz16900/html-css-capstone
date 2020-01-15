@@ -45,46 +45,39 @@
       grid-template-rows: 5% 75% 20%;
   }
 
-
-  /* .main-container {
-      display: grid;
-      grid-template-columns: 1fr 3fr 3fr 1fr;
-      height: 100vh;
-  } */
-
   /* HEADER */
 
   .categories,
   .social,
   header span,
+  .mr-top,
   .cart {
       display: none;
   }
 
+  .logo h6 {
+      font-size: 18px;
+      font-weight: 900;
+  }
 
   header {
-      /* height: 100%; */
       display: flex;
       justify-content: space-between;
       padding: 20px;
       align-items: center;
-
   }
-
-
-  /* header {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr);
-      height: 100%;
-      background-color: aqua;
-  } */
 
   /* MIDDLE LEFT CONTAINER */
 
   .banner-girl-sm {
-    display: block;
+    /* display: block; */
     height: 100%;
-    background: url(/images/banner.jpg) no-repeat 50% 20%;
+    /* background: url(/images/banner.jpg) no-repeat 50% 20%; */
+  }
+
+  .banner-girl-sm img {
+      height: 100%;
+      object-fit: cover;
   }
 
   /* MIDDLE RIGHT CONTAINER */
@@ -96,9 +89,9 @@
       padding: 10px 0 10px 30px;
   }
 
-  .mr-cont * {
+  /* .mr-cont * {
       color: var(--sf-black);
-  }
+  } */
 
   .main-title {
       text-transform: uppercase;
@@ -110,20 +103,9 @@
       font-size: 14px;
   }
 
-
-
-  /* CART */
-
-  /* .cart {
-    height: 100%;
-
-    background-color: skyblue;
-} */
-
-
 /* MEDIA QUERIES */
 
-@media (min-width: 376px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 1023px) {
 
     .banner-girl-sm {
         display: none;
@@ -156,8 +138,144 @@
     .banner-girl-bg {
         display: block;
         height: 100%;
-        background: url(/images/banner_bg.jpg) no-repeat 50% 20%;
+        background: url(/images/longboard.jpg) no-repeat 50% 20%;
         z-index: -1;
     }
+}
+
+@media (min-width: 1024px) {
+
+    /* BRINGING BACK THE ELEMENTS */
+
+    .categories,
+    .social,
+    header span,
+    .mr-top,
+    .cart {
+        display: block;
+    }
+
+    .menu span {
+        display: inline;
+    }
+
+    /* MAIN CONTAINER */
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-template-rows: 100%;
+        height: 100vh;
+    }
+
+    /* HEADER */
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .category-menu,
+    .social-menu {
+        list-style-type: none;
+    }
+
+    .category-menu li {
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .category-menu li a,
+    .menu {
+        font-size: 18px;
+    }
+
+    .sp-menu {
+        padding-left: 5px;
+    }
+
+    .social {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: end;
+    }
+
+    .social-menu li {
+        padding-top: 15px;
+    }
+
+    /* MIDDLE LEFT */
+
+    .ml-cont {
+        background-color: sienna;
+    }
+
+    .banner-girl-sm {
+        background-size: contain;
+    }
+
+    /* MIDDLE RIGHT */
+
+    .mr-cont {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        padding: 0;
+    }
+
+    .mr-top {
+        height: 100%;
+    }
+
+    .mr-top img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mr-bottom {
+        display: grid;
+        padding: 40px 0 40px 60px;
+        justify-content: space-between;
+    }
+
+    .main-title {
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+
+    .mr-bottom p {
+        align-self: end;
+    }
+
+    .shop-now {
+        font-size: 24px;
+    }
+
+    /* CART */
+    .cart {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: end;
+        padding-right: 24px;
+        padding: 20px;
+    }
+
+    .cart-icons {
+        list-style-type: none;
+    }
+
+    .cart-icons li {
+        font-size: 20px;
+        padding-bottom: 48px;
+
+    }
+
 }
 
