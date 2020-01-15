@@ -56,7 +56,8 @@
 
   .categories,
   .social,
-  header span {
+  header span,
+  .cart {
       display: none;
   }
 
@@ -80,22 +81,19 @@
 
   /* MIDDLE LEFT CONTAINER */
 
-  .ml-cont .banner {
+  .banner-girl-sm {
     display: block;
     height: 100%;
     background: url(/images/banner.jpg) no-repeat 50% 20%;
-
   }
-
 
   /* MIDDLE RIGHT CONTAINER */
 
   .mr-cont {
-      padding-left: 30px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding-top: 20px;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px 0 10px 30px;
   }
 
   .mr-cont * {
@@ -121,4 +119,45 @@
 
     background-color: skyblue;
 } */
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 376px) and (max-width: 767px) {
+
+    .banner-girl-sm {
+        display: none;
+    }
+    
+    .main-container {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "left-cont"
+        ; 
+        grid-template-rows: 5% 95%;
+
+    }
+
+    .mr-cont {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 35%;
+        width: 50%;
+        background-color: white;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .banner-girl-bg {
+        display: block;
+        height: 100%;
+        background: url(/images/banner_bg.jpg) no-repeat 50% 20%;
+        z-index: -1;
+    }
+}
 
