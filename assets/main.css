@@ -1,0 +1,107 @@
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* I use this font as opposed to Helvetica Neue because it is free and the closest to 
+       the specified font */
+    font-family: 'Montserrat', sans-serif;
+   }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  /* VARIABLES */
+
+  element {
+      --sf-black: #313131;
+      --sf-gray: #B9B9B9;
+      --sf-white: #F5F5F5; 
+  }
+
+  /* MAIN-CONTAINER */
+
+  .main-container {
+      display: grid;
+      grid-template-areas: 
+      "header"
+      "left-cont"
+      "right-cont"
+      ; 
+      height: 100vh;
+      grid-template-rows: 5% 75% 20%;
+  }
+
+
+  /* .main-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr 3fr 1fr;
+      height: 100vh;
+  } */
+
+  /* HEADER */
+
+  .categories,
+  .social,
+  header span {
+      display: none;
+  }
+
+
+  header {
+      /* height: 100%; */
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      align-items: center;
+
+  }
+
+
+  /* header {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      height: 100%;
+      background-color: aqua;
+  } */
+
+  /* MIDDLE LEFT CONTAINER */
+
+  .ml-cont .banner {
+    display: block;
+    height: 100%;
+    background: url(/images/banner.jpg) no-repeat center;
+
+  }
+
+
+  /* MIDDLE RIGHT CONTAINER */
+
+  /* .mr-cont {
+    height: 100%;
+
+    background-color: darkgray;
+} */
+
+
+  /* CART */
+
+  /* .cart {
+    height: 100%;
+
+    background-color: skyblue;
+} */
+
