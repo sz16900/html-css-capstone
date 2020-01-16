@@ -1,281 +1,279 @@
 /* RESET */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    /* I use this font as opposed to Helvetica Neue because it is free and the closest to 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+
+  /* I use this font as opposed to Helvetica Neue because it is free and the closest to
        the specified font */
-    font-family: 'Montserrat', sans-serif;
-   }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    color: inherit;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
 
-  img {
-    width: 100%;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+/* VARIABLES */
+
+:root {
+  --sf-black: #313131;
+  --sf-gray: #b9b9b9;
+  --sf-white: #f5f5f5;
+}
+
+/* MAIN-CONTAINER */
+
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "left-cont"
+    "right-cont";
+  height: 100vh;
+  grid-template-rows: 5% 75% 20%;
+}
+
+/* HEADER */
+
+.categories,
+.social,
+header span,
+.mr-top,
+.cart {
+  display: none;
+}
+
+.logo h6 {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.category-menu li a,
+.menu,
+.menu span {
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* MIDDLE */
+
+/* MIDDLE LEFT CONTAINER */
+
+.banner-girl-sm {
+  height: 100%;
+
+}
+
+.banner-girl-sm img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MIDDLE RIGHT CONTAINER */
+
+.mr-bottom {
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+    padding: 20px 0 10px 30px;
+}
+
+.banner-girl-bg {
+    display: none;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+.shop-now {
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .banner-girl-sm {
+    display: none;
   }
-
-  /* VARIABLES */
-
-  :root {
-      --sf-black: #313131;
-      --sf-gray: #B9B9B9;
-      --sf-white: #F5F5F5; 
-  }
-
-  /* MAIN-CONTAINER */
 
   .main-container {
-      display: grid;
-      grid-template-areas: 
+    display: grid;
+    grid-template-areas:
       "header"
-      "left-cont"
-      "right-cont"
-      ; 
-      height: 100vh;
-      grid-template-rows: 5% 75% 20%;
+      "left-cont";
+    grid-template-rows: 5% 95%;
   }
 
-  /* HEADER */
+  .mr-cont {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35%;
+    width: 50%;
+    background-color: white;
+  }
+
+  .banner-girl-bg {
+    display: block;
+    height: 100%;
+  }
+
+  .banner-girl-bg img {      
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* BRINGING BACK THE ELEMENTS */
 
   .categories,
   .social,
   header span,
   .mr-top,
   .cart {
-      display: none;
+    display: block;
   }
 
-  .logo h6 {
-      font-size: 18px;
-      font-weight: 900;
+  .menu span {
+    display: inline;
   }
+
+  /* MAIN CONTAINER */
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 100%;
+    height: 100vh;
+  }
+
+  /* HEADER */
 
   header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
   }
 
-  /* MIDDLE LEFT CONTAINER */
+  .category-menu,
+  .social-menu {
+    list-style-type: none;
+  }
+
+  .category-menu li {
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .sp-menu {
+    padding-left: 5px;
+  }
+
+  .social {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: end;
+  }
+
+  .social-menu li {
+    padding-top: 15px;
+  }
+
+  .social-menu li a {
+    font-size: 12px;
+  }
+
+  /* MIDDLE LEFT */
+
+  .ml-cont {
+    background-color: sienna;
+  }
 
   .banner-girl-sm {
-    /* display: block; */
-    height: 100%;
-    /* background: url(/images/banner.jpg) no-repeat 50% 20%; */
+    background-size: contain;
   }
 
-  .banner-girl-sm img {
-      height: 100%;
-      object-fit: cover;
-  }
-
-  /* MIDDLE RIGHT CONTAINER */
+  /* MIDDLE RIGHT */
 
   .mr-cont {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 10px 0 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    padding: 0;
+    padding-left: 2px;
   }
 
-  /* .mr-cont * {
-      color: var(--sf-black);
-  } */
+  .mr-top {
+    height: 100%;
+  }
+
+  .mr-top img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mr-bottom {
+    display: grid;
+    padding: 40px 0 40px 60px;
+    justify-content: space-between;
+  }
 
   .main-title {
-      text-transform: uppercase;
-      font-size: 18px;
-      line-height: 1.8em;
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+
+  .mr-bottom p {
+    align-self: end;
   }
 
   .shop-now {
-      font-size: 14px;
+    font-size: 18px;
   }
 
-/* MEDIA QUERIES */
+  /* CART */
+  .cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: end;
+    padding: 20px;
+  }
 
-@media (min-width: 481px) and (max-width: 1023px) {
+  .cart-icons {
+    list-style-type: none;
+  }
 
-    .banner-girl-sm {
-        display: none;
-    }
-    
-    .main-container {
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "left-cont"
-        ; 
-        grid-template-rows: 5% 95%;
-
-    }
-
-    .mr-cont {
-        display: flex;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 35%;
-        width: 50%;
-        background-color: white;
-        justify-content: space-between;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-
-    .banner-girl-bg {
-        display: block;
-        height: 100%;
-        background: url(/images/longboard.jpg) no-repeat 50% 20%;
-        z-index: -1;
-    }
+  .cart-icons li {
+    font-size: 14px;
+    padding-bottom: 48px;
+  }
 }
-
-@media (min-width: 1024px) {
-
-    /* BRINGING BACK THE ELEMENTS */
-
-    .categories,
-    .social,
-    header span,
-    .mr-top,
-    .cart {
-        display: block;
-    }
-
-    .menu span {
-        display: inline;
-    }
-
-    /* MAIN CONTAINER */
-
-    .main-container {
-        display: grid;
-        grid-template-columns: 1fr 3fr 3fr 1fr;
-        grid-template-rows: 100%;
-        height: 100vh;
-    }
-
-    /* HEADER */
-
-    header {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        height: 100%;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .category-menu,
-    .social-menu {
-        list-style-type: none;
-    }
-
-    .category-menu li {
-        padding-bottom: 30px;
-        font-size: 18px;
-    }
-
-    .category-menu li a,
-    .menu {
-        font-size: 18px;
-    }
-
-    .sp-menu {
-        padding-left: 5px;
-    }
-
-    .social {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: end;
-    }
-
-    .social-menu li {
-        padding-top: 15px;
-    }
-
-    /* MIDDLE LEFT */
-
-    .ml-cont {
-        background-color: sienna;
-    }
-
-    .banner-girl-sm {
-        background-size: contain;
-    }
-
-    /* MIDDLE RIGHT */
-
-    .mr-cont {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
-        padding: 0;
-    }
-
-    .mr-top {
-        height: 100%;
-    }
-
-    .mr-top img {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .mr-bottom {
-        display: grid;
-        padding: 40px 0 40px 60px;
-        justify-content: space-between;
-    }
-
-    .main-title {
-        font-size: 40px;
-        line-height: 1.2em;
-    }
-
-    .mr-bottom p {
-        align-self: end;
-    }
-
-    .shop-now {
-        font-size: 24px;
-    }
-
-    /* CART */
-    .cart {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: end;
-        padding-right: 24px;
-        padding: 20px;
-    }
-
-    .cart-icons {
-        list-style-type: none;
-    }
-
-    .cart-icons li {
-        font-size: 20px;
-        padding-bottom: 48px;
-
-    }
-
-}
-
