@@ -75,15 +75,20 @@ header {
 
 /* MIDDLE */
 
+
 /* MIDDLE LEFT CONTAINER */
 
-.banner-girl-sm {
-  height: 100%;
+.ml-cont {
+    height: 100%;
+    overflow: hidden;
+}
 
+.banner-girl-sm {
+  height: 100vh;
 }
 
 .banner-girl-sm img {
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -109,6 +114,47 @@ header {
 .shop-now {
   font-size: 14px;
 }
+
+/* CATEGORY MIDDLE*/
+
+.item-1 {
+    background-image: url(/images/board-1.jpg);
+}
+
+.item-2 {
+    background-image: url(/images/short-1.jpg);
+}
+
+.item-3 {
+    background-image: url(/images/long-1.jpg);
+}
+
+.item-card {
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto;  /* grid has two columns; content defines width */
+    justify-content: space-between;    /* horizontal alignment of grid tracks */
+    align-content: space-between;      /* vertical alignment of grid tracks */
+    padding: 18px;
+    margin-top: 2px;
+}
+
+.item-card p {
+    background-color: #F5F5F5;
+}
+
+.item-number {
+    color: var(--sf-gray);
+}
+
+.item-name,
+.item-price {
+    color: var(--sf-black);
+}
+
 
 /* MEDIA QUERIES */
 
@@ -136,16 +182,16 @@ header {
 
   .banner-girl-bg {
     display: block;
-    height: 100%;
   }
 
   .banner-girl-bg img {      
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 }
 
 @media (min-width: 1024px) {
+
   /* BRINGING BACK THE ELEMENTS */
 
   .categories,
@@ -164,7 +210,7 @@ header {
 
   .main-container {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 100%;
     height: 100vh;
   }
@@ -209,6 +255,13 @@ header {
 
   .social-menu li a {
     font-size: 12px;
+  }
+
+  /* MIDDLE */
+
+  .mid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
   }
 
   /* MIDDLE LEFT */
@@ -275,5 +328,19 @@ header {
   .cart-icons li {
     font-size: 14px;
     padding-bottom: 48px;
+  }
+
+  /* CATEGORY MIDDLE */
+
+  .cat-mid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-rows: repeat(auto-fill, minmax(50%, 1fr)); */
+      grid-gap: 4px;
+  }
+
+  .item-card {
+      height: 100%;
+      margin-top: 0;
   }
 }
