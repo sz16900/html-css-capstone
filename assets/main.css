@@ -168,6 +168,7 @@ header {
     color: var(--sf-black);
 }
 
+
 /* MEDIA QUERIES */
 
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -190,6 +191,10 @@ header {
     height: 35%;
     width: 50%;
     background-color: white;
+  }
+
+  .mr-bottom p {
+      align-self: end;
   }
 
   .banner-girl-bg {
