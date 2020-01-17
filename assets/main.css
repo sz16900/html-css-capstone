@@ -61,9 +61,9 @@ header span,
   font-weight: 900;
 }
 
+.menu a,
 .category-menu li a,
-.menu,
-.menu a {
+.menu {
   font-size: 14px;
 }
 
@@ -77,8 +77,8 @@ header {
 /* MIDDLE LEFT CONTAINER */
 
 .ml-cont {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 .banner-girl-sm {
@@ -93,14 +93,14 @@ header {
 /* MIDDLE RIGHT CONTAINER */
 
 .mr-bottom {
-    height: 100%;
-    display: grid;
-    justify-content: space-between;
-    padding: 20px 0 10px 30px;
+  height: 100%;
+  display: grid;
+  justify-content: space-between;
+  padding: 20px 0 10px 30px;
 }
 
 .banner-girl-bg {
-    display: none;
+  display: none;
 }
 
 .main-title {
@@ -138,21 +138,20 @@ header {
   }
 
   .mr-bottom p {
-      align-self: end;
+    align-self: end;
   }
 
   .banner-girl-bg {
     display: block;
   }
 
-  .banner-girl-bg img {      
+  .banner-girl-bg img {
     height: 100vh;
     object-fit: cover;
   }
 }
 
 @media (min-width: 1024px) {
-
   /* BRINGING BACK THE ELEMENTS */
 
   .categories,
@@ -215,6 +214,15 @@ header {
     padding-top: 15px;
   }
 
+  .add-cart span,
+  .fraction span,
+  .prev span,
+  .next span,
+  .back-category a {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
   .social-menu li a {
     font-size: 12px;
   }
@@ -222,8 +230,8 @@ header {
   /* MIDDLE */
 
   .mid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   /* MIDDLE LEFT */
@@ -291,25 +299,25 @@ header {
   }
 
   .cart-icons li span {
-      font-size: 12px;
-      padding-right: 8px;
+    font-size: 12px;
+    padding-right: 8px;
   }
 
   .cart ul {
-      display: grid;
+    display: grid;
   }
 
   .cart ul li {
-      justify-self: end;
+    justify-self: end;
   }
 
   /* PRODUCT PAGE */
 
   .product-mid {
-      display: grid;
-      grid-template-columns:repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
-      grid-gap: 2px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 2px;
   }
 
   .product-1 {
@@ -318,75 +326,63 @@ header {
     background-image: url('/images/feature-1.jpg');
   }
 
-    .product-2 {
-        grid-column: 4/7;
-        grid-row: 1/5;
-        background-image: url('/images/feature-2.jpg');
-    }
+  .product-2 {
+    grid-column: 4/7;
+    grid-row: 1/5;
+    background-image: url('/images/feature-2.jpg');
+  }
 
-    .product-3 {
-        grid-column: 7/10;
-        grid-row: 1/5;
-        background-image: url('/images/feature-3.jpg');
-    }
+  .product-3 {
+    grid-column: 7/10;
+    grid-row: 1/5;
+    background-image: url('/images/feature-3.jpg');
+  }
 
-    .product-4 {
-        grid-column: 10/13;
-        grid-row: 1/5;
-        background-image: url('/images/feature-4.jpg');
-    }
+  .product-4 {
+    grid-column: 10/13;
+    grid-row: 1/5;
+    background-image: url('/images/feature-4.jpg');
+  }
 
-    .featured-product {
-        grid-column: 5/13;
-        grid-row: 5/12;
-        height: 100%;
-    }
+  .featured-product {
+    grid-column: 5/13;
+    grid-row: 5/12;
+    height: 100%;
+  }
 
-    .price {
-        grid-column: 1/5;
-        grid-row: 5/7;
-        background-color: var(--sf-white);
-    }
+  .price {
+    grid-column: 1/5;
+    grid-row: 5/7;
+    background-color: var(--sf-white);
+  }
 
-    .cost {
-        font-size: 14px;    
-    }
+  .cost {
+    font-size: 14px;
+  }
 
-    .size {
-        grid-column: 1/5;
-        grid-row: 7/8;
-    }
+  .size {
+    grid-column: 1/5;
+    grid-row: 7/8;
+  }
 
-    .details {
-        grid-column: 1/5;
-        grid-row: 8/12;
-    }
+  .details {
+    grid-column: 1/5;
+    grid-row: 8/12;
+  }
 
-    .add-cart {
-        grid-column: 2/5;
-    }
+  .add-cart {
+    grid-column: 2/5;
+  }
 
-    .add-cart span,
-    .fraction span,
-    .prev span,
-    .next  span,
-    .back-category a  {
-        font-size: 12px;
-        font-weight: bold;
-    }
+  .fraction {
+    grid-row: 12/13;
+    grid-column: 5/11;
+    justify-content: end;
+    padding-right: 48px;
+  }
 
-    .fraction {
-        grid-row: 12/13;
-        grid-column: 5/11;
-        justify-content: end;
-        padding-right: 48px;
-    }
-
-    .prev,
-    .next {
-        display: grid;
-    }
+  .prev,
+  .next {
+    display: grid;
+  }
 }
-
-
-

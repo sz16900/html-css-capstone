@@ -1,71 +1,68 @@
 
-/* PHONE CATEGORY MIDDLE*/
+/* PHONE CATEGORY MIDDLE */
 
 .item-1 {
-    background-image: url(/images/board-1.jpg);
+  background-image: url(/images/board-1.jpg);
 }
 
 .item-2 {
-    background-image: url(/images/short-1.jpg);
+  background-image: url(/images/short-1.jpg);
 }
 
 .item-3 {
-    background-image: url(/images/long-1.jpg);
+  background-image: url(/images/long-1.jpg);
 }
 
 .item-4 {
-    background-image: url(/images/filler-1.jpg);
+  background-image: url(/images/filler-1.jpg);
 }
 
 .item-5 {
-    background-image: url(/images/filler-2.jpg);
+  background-image: url(/images/filler-2.jpg);
 }
 
 .item-6 {
-    background-image: url(/images/filler-3.jpg);
+  background-image: url(/images/filler-3.jpg);
 }
 
 .item-card {
-    height: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: auto auto;  /* grid has two columns; content defines width */
-    justify-content: space-between;    /* horizontal alignment of grid tracks */
-    align-content: space-between;      /* vertical alignment of grid tracks */
-    padding: 18px;
-    margin-top: 2px;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: auto auto;  /* grid has two columns; content defines width */
+  justify-content: space-between;    /* horizontal alignment of grid tracks */
+  align-content: space-between;      /* vertical alignment of grid tracks */
+  padding: 18px;
+  margin-top: 2px;
 }
 
 .item-card p {
-    background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .item-number {
-    color: var(--sf-gray);
+  color: var(--sf-gray);
 }
 
 .item-name,
 .item-price {
-    color: var(--sf-black);
+  color: var(--sf-black);
 }
-
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-    
-      /* CATEGORY MIDDLE */
+  /* CATEGORY MIDDLE */
 
   .cat-mid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4px;
-}
+  }
 
-.item-card {
+  .item-card {
     height: 100%;
     margin-top: 0;
-}
-
+  }
 }
