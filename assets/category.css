@@ -32,6 +32,14 @@
   background-image: url(../images/filler-3.jpg);
 }
 
+.cat-title {
+  display: none;
+}
+
+.cat-mid {
+  height: 100%;
+}
+
 .item-card {
   height: 60%;
   background-position: center;
@@ -59,10 +67,16 @@
 
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
+
+  .cat-title {
+    display: none;
+  }
+
   .cat-mid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2px;
+    height: 100%;
   }
 
   .item-card {
@@ -73,6 +87,13 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
+
+  .cat-title {
+    display: block;
+    padding: 40px 0 40px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
   .cat-mid {
     display: grid;
