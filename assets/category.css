@@ -1,64 +1,35 @@
+/* VARIABLES */
+
+:root {
+  --sf-black: #313131;
+  --sf-gray: #b9b9b9;
+  --sf-white: #f5f5f5;
+}
 
 /* PHONE CATEGORY MIDDLE */
 
 .item-1 {
-  background-image: linear-gradient(
-    to bottom, 
-    rgba(245, 245, 245, .7),
-    rgba(100, 100, 100, 0),
-    rgba(100, 100, 100, 0),
-    rgba(245, 245, 245, .7)),
-    url(../images/board-1.jpg);
+  background-image: url(../images/board-1.jpg);
 }
 
 .item-2 {
-  background-image: linear-gradient(
-    to bottom, 
-    rgba(245, 245, 245, .7),
-    rgba(100, 100, 100, 0),
-    rgba(100, 100, 100, 0),
-    rgba(245, 245, 245, .7)),
-    url(../images/short-1.jpg);
+  background-image: url(../images/short-1.jpg);
 }
 
 .item-3 {
-  background-image: linear-gradient(
-    to bottom, 
-    rgba(245, 245, 245, .7),
-    rgba(100, 100, 100, 0),
-    rgba(100, 100, 100, 0),
-    rgba(245, 245, 245, .7)),
-    url(../images/long-1.jpg);
+  background-image: url(../images/long-1.jpg);
 }
 
 .item-4 {
-  background-image: linear-gradient(
-    to bottom, 
-    rgba(245, 245, 245, .7),
-    rgba(100, 100, 100, 0),
-    rgba(100, 100, 100, 0),
-    rgba(245, 245, 245, .7)),
-    url(../images/feature-5.jpg);
+  background-image: url(../images/feature-5.jpg);
 }
 
 .item-5 {
-  background-image: linear-gradient(
-    to bottom, 
-    rgba(245, 245, 245, .7),
-    rgba(100, 100, 100, 0),
-    rgba(100, 100, 100, 0),
-    rgba(245, 245, 245, .7)),
-    url(../images/filler-2.jpg);
+  background-image: url(../images/filler-2.jpg);
 }
 
 .item-6 {
-  background-image: linear-gradient(
-    to bottom, 
-    rgba(245, 245, 245, .7),
-    rgba(100, 100, 100, 0),
-    rgba(100, 100, 100, 0),
-    rgba(245, 245, 245, .7)),
-    url(../images/filler-3.jpg);
+  background-image: url(../images/filler-3.jpg);
 }
 
 .item-card {
@@ -76,21 +47,37 @@
 
 .item-number {
   color: var(--sf-gray);
+  background-color: var(--sf-white);
 }
 
 .item-name,
 .item-price {
   color: var(--sf-black);
+  background-color: var(--sf-white);
+}
+
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1023px) {
+  .cat-mid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+  }
+
+  .item-card {
+    height: 100%;
+    margin-top: 0;
+  }
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-  /* CATEGORY MIDDLE */
 
   .cat-mid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4px;
+    grid-gap: 2px;
   }
 
   .item-card {
