@@ -2,27 +2,27 @@
 /* PHONE CATEGORY MIDDLE */
 
 .item-1 {
-  background-image: url(/images/board-1.jpg);
+  background-image: url(../images/board-1.jpg);
 }
 
 .item-2 {
-  background-image: url(/images/short-1.jpg);
+  background-image: url(../images/short-1.jpg);
 }
 
 .item-3 {
-  background-image: url(/images/long-1.jpg);
+  background-image: url(../images/long-1.jpg);
 }
 
 .item-4 {
-  background-image: url(/images/filler-1.jpg);
+  background-image: url(../images/filler-1.jpg);
 }
 
 .item-5 {
-  background-image: url(/images/filler-2.jpg);
+  background-image: url(../images/filler-2.jpg);
 }
 
 .item-6 {
-  background-image: url(/images/filler-3.jpg);
+  background-image: url(../images/filler-3.jpg);
 }
 
 .item-card {

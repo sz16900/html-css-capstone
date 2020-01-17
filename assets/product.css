@@ -1,22 +1,22 @@
 /* IMAGES */
 .product-1 {
-  background-image: url('/images/feature-1.jpg');
+  background-image: url('../images/feature-1.jpg');
 }
 
 .product-2 {
-  background-image: url('/images/feature-2.jpg');
+  background-image: url('../images/feature-2.jpg');
 }
 
 .product-3 {
-  background-image: url('/images/feature-3.jpg');
+  background-image: url('../images/feature-3.jpg');
 }
 
 .product-4 {
-  background-image: url('/images/feature-5.jpg');
+  background-image: url('../images/feature-5.jpg');
 }
 
 .featured-product {
-  background-image: url('/images/feature-4.jpg');
+  background-image: url('../images/feature-4.jpg');
   grid-column: 1/-1;
   grid-row: 1/4;
 }

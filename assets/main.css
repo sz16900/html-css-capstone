@@ -236,10 +236,6 @@ header {
 
   /* MIDDLE LEFT */
 
-  .ml-cont {
-    background-color: sienna;
-  }
-
   .banner-girl-sm {
     background-size: contain;
   }
@@ -323,25 +319,25 @@ header {
   .product-1 {
     grid-column: 1/4;
     grid-row: 1/5;
-    background-image: url('/images/feature-1.jpg');
+    background-image: url('../images/feature-1.jpg');
   }
 
   .product-2 {
     grid-column: 4/7;
     grid-row: 1/5;
-    background-image: url('/images/feature-2.jpg');
+    background-image: url('../images/feature-2.jpg');
   }
 
   .product-3 {
     grid-column: 7/10;
     grid-row: 1/5;
-    background-image: url('/images/feature-3.jpg');
+    background-image: url('../images/feature-3.jpg');
   }
 
   .product-4 {
     grid-column: 10/13;
     grid-row: 1/5;
-    background-image: url('/images/feature-4.jpg');
+    background-image: url('../images/feature-4.jpg');
   }
 
   .featured-product {
