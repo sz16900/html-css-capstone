@@ -66,7 +66,6 @@
 
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
-
   .cat-title {
     display: none;
   }
@@ -86,7 +85,6 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-
   .cat-title {
     display: block;
     padding: 40px 0 40px 0;
