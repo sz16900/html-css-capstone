@@ -56,7 +56,6 @@
   background-color: var(--sf-white);
 }
 
-
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
   .cat-mid {
@@ -73,7 +72,6 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-
   .cat-mid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
