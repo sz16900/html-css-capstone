@@ -51,7 +51,8 @@ img {
 .social,
 header span,
 .mr-top,
-.cart {
+.cart,
+.appear {
   display: none;
 }
 
@@ -167,9 +168,6 @@ header {
     color: var(--sf-black);
 }
 
-
-
-
 /* MEDIA QUERIES */
 
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -212,7 +210,8 @@ header {
   .social,
   header span,
   .mr-top,
-  .cart {
+  .cart,
+  .appear {
     display: block;
   }
 
@@ -372,22 +371,16 @@ header {
 
   .product-mid {
       display: grid;
-      /* grid-template-areas: 
-      "item-1 item-2 item-3 item-4"
-      "price feature feature feature"
-      "size feature feature feature"
-      "details feature feature feature"
-      ; */
       grid-template-columns:repeat(12, 1fr);
       grid-template-rows: repeat(12, 1fr);
       grid-gap: 2px;
   }
 
-  .item-fill {
+  /* .item-fill {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  } */
 
   .product-1 {
     grid-column: 1/4;
@@ -416,7 +409,8 @@ header {
     .featured-product {
         grid-column: 5/13;
         grid-row: 5/12;
-        background-image: url('/images/feature-5.jpg');
+        height: 100%;
+        /* background-image: url('/images/feature-5.jpg'); */
     }
 
     .price {
@@ -425,12 +419,12 @@ header {
         background-color: var(--sf-white);
     }
 
-    .price {
+    /* .price {
         display: grid;
         grid-template-columns: 2fr 1fr;
-    }
+    } */
 
-    .b-title,
+    /* .b-title,
     .cost {
         align-self: center;
         justify-self: center;
@@ -446,20 +440,20 @@ header {
         font-size: 12px;
         text-transform: uppercase;
         color: var(--sf-gray);
-    }
+    } */
 
     .cost {
         font-size: 14px;    
     }
 
     .size {
-        display: grid;
+        /* display: grid; */
         grid-column: 1/5;
         grid-row: 7/8;
-        background-color: var(--sf-white);
+        /* background-color: var(--sf-white); */
     }
 
-    .size ul {
+    /* .size ul {
         align-self: center;
         justify-self: center;
         list-style-type: none;
@@ -475,16 +469,16 @@ header {
     .size ul li:nth-child(3) {
         color: black;
         font-weight: bold;
-    }
+    } */
 
     .details {
         grid-column: 1/5;
         grid-row: 8/12;
-        background-color: var(--sf-white);
-        padding: 18px;
+        /* background-color: var(--sf-white); */
+        /* padding: 18px; */
     }
 
-    .p-details {
+    /* .p-details {
         font-size: 14px;
         font-weight: bold;
         padding-bottom: 14px;
@@ -492,14 +486,14 @@ header {
 
     .description {
         font-size: 12px;
-    }
+    } */
 
-    .plus,
+    /* .plus,
     .add-cart,
     .fraction {
         background-color: var(--sf-white);
         display: grid;
-    }
+    } */
 
     .add-cart {
         grid-column: 2/5;
@@ -514,16 +508,17 @@ header {
         font-weight: bold;
     }
 
-    .plus i,
+    /* .plus i,
     .add-cart span,
     .fraction span,
     .prev span,
     .next  span {
         align-self: center;
         justify-self: center;
-    }
+    } */
 
     .fraction {
+        grid-row: 12/13;
         grid-column: 5/11;
         justify-content: end;
         padding-right: 48px;
