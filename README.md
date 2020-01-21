@@ -1,6 +1,6 @@
 # [HTML & CSS Capstone Project: Surfboard Shop]
 
-> In this project, I am going to make a a real-world-like project, built with business specifications. This project is completed by Seth Zea, in partial requirements of the Microverse cirriculum. 
+> In this project, I am going to make a real-world-like project, built with business specifications from [Notion](https://www.notion.so/microverse/HTML-CSS-capstone-project-Sneakers-shop-a3c5d4e66fa54d599464cbf1449d46d2). This is a capstone project for [Microverse](https://www.microverse.org/) in order to demonstrate knowledge of HTML/CSS by ceating a website from scratch without the aide of external framewroks. This project is completed by Seth Zea, in partial requirements of the Microverse cirriculum. 
 
 ---
 
@@ -27,8 +27,7 @@
 - Google Fonts
 - Fatkun
 - W3 Validators
-- Sticklr
-- Love :heart:
+- Stickler
 
 ## Live Demo
 
@@ -48,12 +47,6 @@
 
 - Stylelint
 
-### Install
-
-`git clone`
-
-`npm install`
-
 ### Run Linter Test
 
 `stylelint "*/*.css"`
@@ -64,9 +57,23 @@
 
 `stylelint "*/**.css" --fix`
 
-### Deployment
+### Getting Started
 
-`npm start`
+To get a local copy up and running follow these simple example steps.
+- Clone the project unto your local machine
+- `cd` into the project directory
+- open index.html file or run a live server from your favorite code editor
+
+### 🤝 Contributing
+
+Contributions, issues and feature requests are welcome! Start by:
+* Forking the project
+* Cloning the project to your local machine
+* `cd` into the project directory
+* Run `git checkout -b your-branch-name`
+* Make your contributions
+* Push your branch up to your forked repository
+* Open a Pull Request with a detailed description to the development branch of the original project for a review
 
 ---
 
@@ -80,12 +87,6 @@
 
 ---
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
@@ -93,6 +94,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://microverse.org)
+- [Axel Arigato](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website) for his amazing design 
 
 ---
 
