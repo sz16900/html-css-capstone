@@ -301,13 +301,6 @@ header {
 
   /* PRODUCT PAGE */
 
-  .product-mid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-gap: 2px;
-  }
-
   .product-1 {
     grid-column: 1/4;
     grid-row: 1/5;
@@ -367,10 +360,5 @@ header {
     grid-column: 5/11;
     justify-content: end;
     padding-right: 48px;
-  }
-
-  .prev,
-  .next {
-    display: grid;
   }
 }

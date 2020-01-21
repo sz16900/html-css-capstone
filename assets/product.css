@@ -25,9 +25,6 @@
 
 .main-container {
   display: grid;
-  grid-template-areas:
-    "header"
-    "left-cont";
   grid-template-rows: 5% 95%;
 }
 
@@ -55,13 +52,16 @@
   justify-self: center;
 }
 
+.prev,
+.next, 
 .plus,
 .add-cart,
 .fraction,
 .price,
 .size {
   background-color: var(--sf-white);
-  display: grid;
+  display: flex;
+  justify-content: center;
 }
 
 .fraction {
@@ -77,7 +77,9 @@
   grid-column: 1/-1;
   grid-row: 5/7;
   grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
 }
+
 
 .size {
   grid-column: 1/-1;
@@ -86,7 +88,6 @@
 
 .size ul {
   align-self: center;
-  justify-self: center;
   list-style-type: none;
 }
 
@@ -216,6 +217,7 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
+
   .main-container {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 100%;
@@ -308,10 +310,5 @@
     grid-column: 5/11;
     justify-content: end;
     padding-right: 48px;
-  }
-
-  .prev,
-  .next {
-    display: grid;
   }
 }
