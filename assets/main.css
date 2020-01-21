@@ -37,10 +37,6 @@ img {
 
 .main-container {
   display: grid;
-  grid-template-areas:
-    "header"
-    "left-cont"
-    "right-cont";
   height: 100vh;
   grid-template-rows: 5% 75% 20%;
 }
@@ -92,12 +88,13 @@ header {
 
 /* MIDDLE RIGHT CONTAINER */
 
-.mr-bottom {
+ .mr-bottom {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  display: grid;
-  justify-content: space-between;
   padding: 20px 0 10px 30px;
-}
+  justify-content: space-between; 
+} 
 
 .banner-girl-bg {
   display: none;
@@ -135,10 +132,6 @@ header {
     height: 35%;
     width: 50%;
     background-color: white;
-  }
-
-  .mr-bottom p {
-    align-self: end;
   }
 
   .banner-girl-bg {
@@ -179,13 +172,11 @@ header {
   /* HEADER */
 
   header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    height: 100%;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
     align-items: flex-start;
-    padding: 20px;
+    padding: 20px; 
   }
 
   .category-menu,
@@ -203,11 +194,8 @@ header {
   }
 
   .social {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: end;
+    display: flex;
+    flex-direction: column;
   }
 
   .social-menu li {
@@ -230,11 +218,14 @@ header {
   /* MIDDLE */
 
   .mid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
   }
 
   /* MIDDLE LEFT */
+
+  .ml-cont {
+    width: 50%;
+  }
 
   .banner-girl-sm {
     background-size: contain;
@@ -243,15 +234,15 @@ header {
   /* MIDDLE RIGHT */
 
   .mr-cont {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     padding-left: 2px;
+    width: 50%;
   }
 
   .mr-top {
-    height: 100%;
+    height: 50%;
   }
 
   .mr-top img {
@@ -260,7 +251,9 @@ header {
   }
 
   .mr-bottom {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
     padding: 40px 0 40px 60px;
     justify-content: space-between;
   }
@@ -270,19 +263,14 @@ header {
     line-height: 1.2em;
   }
 
-  .mr-bottom p {
-    align-self: end;
-  }
-
   .shop-now {
     font-size: 18px;
   }
 
   /* CART */
   .cart {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: flex-end;
     padding: 20px;
   }
 
@@ -300,7 +288,11 @@ header {
   }
 
   .cart ul {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 50%;
+    justify-content: space-between;
   }
 
   .cart ul li {
