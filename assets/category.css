@@ -55,13 +55,11 @@
 
 .item-number {
   color: var(--sf-gray);
-  background-color: var(--sf-white);
 }
 
 .item-name,
 .item-price {
   color: var(--sf-black);
-  background-color: var(--sf-white);
 }
 
 /* TABLET */
