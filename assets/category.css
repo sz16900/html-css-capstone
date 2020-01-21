@@ -32,12 +32,12 @@
   background-image: url(../images/filler-3.jpg);
 }
 
-
 .item-card {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   /* This is created to make sure all items are placed in their respective corners */
   display: grid;
   grid-template-columns: auto auto;  /* grid has two columns; content defines width */
@@ -90,12 +90,11 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-
   .cat-mid {
     align-content: flex-start;
   }
- 
-  .product-container  {
+
+  .product-container {
     width: 33.3%;
     height: 50%;
   }
@@ -105,9 +104,8 @@
     padding: 40px 0 40px 0;
     font-size: 18px;
     font-weight: bold;
-    
   }
- 
+
   .item-card {
     height: 100%;
   }

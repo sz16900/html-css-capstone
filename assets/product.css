@@ -53,7 +53,7 @@
 }
 
 .prev,
-.next, 
+.next,
 .plus,
 .add-cart,
 .fraction,
@@ -79,7 +79,6 @@
   grid-template-columns: 2fr 1fr;
   justify-content: space-around;
 }
-
 
 .size {
   grid-column: 1/-1;
@@ -217,7 +216,6 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-
   .main-container {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 100%;
