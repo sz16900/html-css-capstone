@@ -1,0 +1,364 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+
+  /* I use this font as opposed to Helvetica Neue because it is free and the closest to
+       the specified font */
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+/* VARIABLES */
+
+:root {
+  --sf-black: #313131;
+  --sf-gray: #b9b9b9;
+  --sf-white: #f5f5f5;
+}
+
+/* MAIN-CONTAINER */
+
+.main-container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 5% 75% 20%;
+}
+
+/* HEADER */
+
+.categories,
+.social,
+header span,
+.mr-top,
+.cart,
+.appear {
+  display: none;
+}
+
+.logo a {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.menu a,
+.category-menu li a,
+.menu {
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* MIDDLE LEFT CONTAINER */
+
+.ml-cont {
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner-girl-sm {
+  height: 100vh;
+}
+
+.banner-girl-sm img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* MIDDLE RIGHT CONTAINER */
+
+.mr-bottom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0 10px 30px;
+  justify-content: space-between;
+}
+
+.banner-girl-bg {
+  display: none;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+.shop-now {
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .banner-girl-sm {
+    display: none;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "left-cont";
+    grid-template-rows: 5% 95%;
+  }
+
+  .mr-cont {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35%;
+    width: 50%;
+    background-color: white;
+  }
+
+  .banner-girl-bg {
+    display: block;
+  }
+
+  .banner-girl-bg img {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* BRINGING BACK THE ELEMENTS */
+
+  .categories,
+  .social,
+  header span,
+  .mr-top,
+  .cart,
+  .appear {
+    display: block;
+  }
+
+  .menu a {
+    display: inline;
+  }
+
+  /* MAIN CONTAINER */
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 100%;
+    height: 100vh;
+  }
+
+  /* HEADER */
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .category-menu,
+  .social-menu {
+    list-style-type: none;
+  }
+
+  .category-menu li {
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .sp-menu {
+    padding-left: 5px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-menu li {
+    padding-top: 15px;
+  }
+
+  .add-cart span,
+  .fraction span,
+  .prev span,
+  .next span,
+  .back-category a {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .social-menu li a {
+    font-size: 12px;
+  }
+
+  /* MIDDLE */
+
+  .mid-container {
+    display: flex;
+  }
+
+  /* MIDDLE LEFT */
+
+  .ml-cont {
+    width: 50%;
+  }
+
+  .banner-girl-sm {
+    background-size: contain;
+  }
+
+  /* MIDDLE RIGHT */
+
+  .mr-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-left: 2px;
+    width: 50%;
+  }
+
+  .mr-top {
+    height: 50%;
+  }
+
+  .mr-top img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mr-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    padding: 40px 0 40px 60px;
+    justify-content: space-between;
+  }
+
+  .main-title {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+
+  .shop-now {
+    font-size: 18px;
+  }
+
+  /* CART */
+  .cart {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  .cart-icons {
+    list-style-type: none;
+  }
+
+  .cart-icons li {
+    font-size: 14px;
+  }
+
+  .cart-icons li span {
+    font-size: 12px;
+    padding-right: 8px;
+  }
+
+  .cart ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 50%;
+    justify-content: space-between;
+  }
+
+  .cart ul li {
+    justify-self: end;
+  }
+
+  /* PRODUCT PAGE */
+
+  .product-1 {
+    grid-column: 1/4;
+    grid-row: 1/5;
+    background-image: url('../images/feature-1.jpg');
+  }
+
+  .product-2 {
+    grid-column: 4/7;
+    grid-row: 1/5;
+    background-image: url('../images/feature-2.jpg');
+  }
+
+  .product-3 {
+    grid-column: 7/10;
+    grid-row: 1/5;
+    background-image: url('../images/feature-3.jpg');
+  }
+
+  .product-4 {
+    grid-column: 10/13;
+    grid-row: 1/5;
+    background-image: url('../images/feature-4.jpg');
+  }
+
+  .featured-product {
+    grid-column: 5/13;
+    grid-row: 5/12;
+    height: 100%;
+  }
+
+  .price {
+    grid-column: 1/5;
+    grid-row: 5/7;
+    background-color: var(--sf-white);
+  }
+
+  .cost {
+    font-size: 14px;
+  }
+
+  .size {
+    grid-column: 1/5;
+    grid-row: 7/8;
+  }
+
+  .details {
+    grid-column: 1/5;
+    grid-row: 8/12;
+  }
+
+  .add-cart {
+    grid-column: 2/5;
+  }
+
+  .fraction {
+    grid-row: 12/13;
+    grid-column: 5/11;
+    justify-content: end;
+    padding-right: 48px;
+  }
+}
