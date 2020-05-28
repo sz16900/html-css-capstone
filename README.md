@@ -104,6 +104,8 @@ Give a ⭐️ if you like this project!
 - Add more content to page for better experience
 - Use Rails for a dynamic web page
 
+---
+
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
