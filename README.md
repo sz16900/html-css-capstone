@@ -1,6 +1,6 @@
 # [HTML & CSS Capstone Project: Surfboard Shop]
 
-> In this project, I am going to make a real-world-like project, built with business specifications from [Notion](https://www.notion.so/microverse/HTML-CSS-capstone-project-Sneakers-shop-a3c5d4e66fa54d599464cbf1449d46d2). This is a capstone project for [Microverse](https://www.microverse.org/) in order to demonstrate knowledge of HTML/CSS by ceating a website from scratch without the aide of external framewroks. This project is completed by Seth Zea, in partial requirements of the Microverse cirriculum. 
+In this project, I am going to make a real-world-like project, built with business specifications from [Notion](https://www.notion.so/microverse/HTML-CSS-capstone-project-Sneakers-shop-a3c5d4e66fa54d599464cbf1449d46d2). This is a capstone project for [Microverse](https://www.microverse.org/) in order to demonstrate knowledge of HTML/CSS by creating a website from scratch without the aid of external frameworks. This project is completed by Seth Zea, in partial requirements of the Microverse curriculum.
 
 ---
 
